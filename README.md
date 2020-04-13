@@ -71,6 +71,23 @@ repeat these steps to upgrade to future releases.
 
 * [Linux](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-linux)
 * [macOS](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-mac)
+Live Coding Editor Build:
+```
+cd ~/github/atom
+git clone https://github.com/sandcobainer/atom
+cd atom
+script/build --install DIR
+```
+
+FoxDot Package Build:
+
+```
+cd ~/github/atom/packages
+git clone https://github.com/sandcobainer/atom-foxdot
+cd atom-foxdot
+npm install
+atom --dev .
+```
 * [Windows](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-windows)
 
 ## Discussion
