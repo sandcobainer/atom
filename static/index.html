@@ -6,7 +6,7 @@
   content="default-src * atom://*;
     img-src blob: data: * atom://*;
     worker-src blob: data: * ;
-    script-src 'self' 'unsafe-eval';
+    script-src blob: 'self' 'unsafe-eval';
     style-src 'self' 'unsafe-inline';
     media-src blob: data: mediastream: * atom://*;">
   <script src="index.js"></script>
@@ -16,5 +16,6 @@
   <script src="scripts/src/sketch.js"></script>
 </head>
 <body tabindex="-1">
+<div id ="p5Can"> </div>
 </body>
 </html>
